@@ -108,9 +108,19 @@ footer {
   font-size: 125%;
 }
 
-.image-container img {
+.image-container img:first-child {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 5px solid #ff0000;
+}
+
+.image-container img:nth-child(2) {
+  vertical-align: top;
+  border: 5px solid #00ff11;
+}
+
+.image-container img:last-child {
+  vertical-align: top;
+  border: 5px solid #0004ff;
 }
 
 .image-container img:first-of-type {
