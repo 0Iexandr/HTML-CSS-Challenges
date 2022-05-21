@@ -33,10 +33,6 @@ section {
   background-color: #f8f0fb;
 }
 
-img {
-  border: 5px solid #8075ff;
-}
-
 h1,
 h2,
 h3,
@@ -108,7 +104,11 @@ footer {
   font-size: 125%;
 }
 
-.image-container img:first-child {
+.image-container {
+  display: flex;
+}
+
+.image-container img {
   vertical-align: top;
   border: 5px solid #ff0000;
 }
@@ -123,6 +123,21 @@ footer {
   border: 5px solid #0004ff;
 }
 
+.image-container img:nth-child(1) {
+  vertical-align: top;
+  border: 5px solid #ff0000;
+}
+
+.image-container img:nth-child(2) {
+  vertical-align: top;
+  border: 5px solid #00ff11;
+}
+
+.image-container img:nth-child(3) {
+  vertical-align: top;
+  border: 5px solid #0004ff;
+}
+
 .image-container img:first-of-type {
   vertical-align: bottom;
 }
@@ -130,6 +145,10 @@ footer {
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
+}
+
+.tigers h2 {
+  color: #FFFFFF;
 }
 
 .giraffe {
